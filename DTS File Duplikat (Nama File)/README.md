@@ -2,7 +2,7 @@
 
 ## Deskripsi
 
-**DTS File Duplikat (Nama File)** adalah program Python yang dirancang untuk mendeteksi dan menangani file duplikat di Google Drive berdasarkan **nama file**. Program ini membaca semua folder utama dan subfolder di My Drive, termasuk folder berbagi yang telah ditambahkan sebagai pintasan ke My Drive. 
+**DTS File Duplikat (Nama File)** adalah program Python yang saya rancang untuk mendeteksi dan menangani file duplikat di Google Drive berdasarkan **Nama File**. Program ini membaca semua folder utama dan subfolder di My Drive, termasuk folder berbagi yang telah ditambahkan sebagai pintasan ke My Drive. 
 
 **Fitur Utama**:
 1. **Deteksi File Duplikat**: Mengidentifikasi file dengan nama yang sama di folder utama dan subfolder.
@@ -19,10 +19,11 @@ Buka [Google Colab](https://colab.research.google.com/) untuk menjalankan progra
 
 Setelah membuka Google Colab, klik tombol **Notebook Baru** di pojok kanan bawah untuk membuat file notebook baru.  
 
-### 2. **Unduh Skrip dengan cURL**
+### 2. **Unduh Skrip dengan Wget**
 Jalankan perintah berikut di Google Colab untuk mengunduh skrip Python ini dari GitHub:  
 ```bash
-!wget https://raw.githubusercontent.com/Andik252/DriveDuplicateHandler/refs/heads/main/script.py
+!wget "https://github.com/Andik252/DriveFileTools/raw/refs/heads/main/DTS%20File%20Duplikat%20%28Nama%20File%29/script.py"
+
 ```
 ### 3. **Jalankan Program**
 Setelah skrip diunduh, jalankan program menggunakan perintah berikut:  
@@ -42,7 +43,6 @@ exec(open('script.py').read())
   >Jika file tersebut diupload oleh orang lain (file shering), **FILE BISA HILANG.** alias File akan *kembali muncul di My Drive orang yang **Mengunggahnya**, bukan My Drive Anda*.
 
 - **Folder Pintasan**: Program ini dapat membaca folder yang telah Anda tambahkan sebagai pintasan di My Drive, termasuk folder berbagi. Pastikan folder yang ingin dipindai telah ditambahkan sebagai pintasan di My Drive.
->Jika Anda hanya ingin memindai folder tertentu dan bukan seluruh struktur folder, Anda dapat membuat pintasan untuk folder yang diinginkan saja. Misalnya, jika Anda memiliki Folder **A** yang berisi Subfolder **B** dan **C**, dan hanya ingin memindai Subfolder **C**, Anda cukup membuat pintasan untuk **Subfolder C** di My Drive. Dengan cara ini, program hanya akan memindai folder yang telah Anda pilih, tanpa memindai folder yang lebih besar atau seluruh hierarki folder.
 
 - **Persiapkan My Drive Anda**: Sebelum menjalankan program, disarankan untuk merapikan My Drive Anda. Hal ini akan membantu menghindari kebingungan saat file yang dikeluarkan dari folder muncul kembali di halaman utama My Drive Anda. Jika My Drive Anda berantakan, bisa jadi Anda kesulitan menemukan file tersebut setelah dipindahkan.
 
